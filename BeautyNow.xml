@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="BeautyNow.xsl"?>
+<BeautyNow>
+	<section name="Waxing">
+		<entree >
+			<item >Upper Lip</item>
+			<price>5.00</price>
+		</entree>
+		<entree>
+			<item >Armpit</item>
+			<price>8.00</price>
+		</entree>
+        <entree>
+			<item >Half Leg</item>
+			<price>8.00</price>
+		</entree>
+		<entree>
+		    <item >Full Leg</item>
+			<price>15.00</price>
+		</entree>
+		<entree>
+		    <item >Bikini Line</item>
+			<price>12.00</price>
+		</entree>
+		<entree>
+		    <item >Hollywood</item>
+			<price>15.00</price>
+		</entree>
+		<entree>
+			<item>Chest</item>
+			<price>15.00</price>
+		</entree>
+		<entree>
+			<item>Back</item>
+			<price>12.00</price>
+		</entree>
+	</section>
+	<section name="Facial Threading">
+		<entree Pigmentation="true">
+			<item>Eye Brows design</item>
+			<price>99.00</price>
+		</entree>
+		<entree>
+			<item>Eye Brows design - line</item>
+			<price>20.00</price>
+		</entree>
+		<entree>
+			<item>EyeLashe Extension</item>
+			<price>50.00</price>
+        </entree>
+		<entree>
+	<section name="Manicure" >
+		<entree>
+			<item>Basic Manicure</item>
+			<price>20.00</price>
+		</entree>
+		<entree>
+			<item>Shellac</item>
+			<price>45.00</price>
+		</entree>
+		<entree>
+			<item>Acrilic Nail</item>
+			<price>55.00</price>
+		</entree>
+	</section>
+	<section name="Pedicure" >
+		<entree>
+			<item>Basic Pedicure</item>
+			<price>20.00</price>
+		</entree>
+		<entree>
+			<item>Shellac Pedicure</item>
+			<price>45.00</price>
+		</entree>
+		<entree>
+			<item>Classic Pedicure</item>
+			<price>50.00</price>
+		</entree>
+	</section>
+</BeautyNow>
