@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <?xml-stylesheet type="text/xsl" href="BeautyNow.xsl"?>
+<?xml-stylesheet type="text/xsl" href="BeautyNowStyle.css"?>
 <BeautyNow>
 	<section name="Waxing">
 		<entree >
@@ -48,7 +49,7 @@
 			<item>EyeLashe Extension</item>
 			<price>50.00</price>
         </entree>
-		<entree>
+		</section>
 	<section name="Manicure" >
 		<entree>
 			<item>Basic Manicure</item>
