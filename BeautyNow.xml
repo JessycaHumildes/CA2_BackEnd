@@ -33,6 +33,10 @@
       <item>Back</item>
       <price>12.00</price>
     </entree>
+    <entree>
+      <item>finger</item>
+      <price>1.00</price>
+    </entree>
   </section>
   <section name="Facial Threading">
     <entree Pigmentation="true">
@@ -46,6 +50,10 @@
     <entree>
       <item>EyeLashe Extension</item>
       <price>50.00</price>
+    </entree>
+    <entree>
+      <item>finger</item>
+      <price>1.00</price>
     </entree>
     <entree>
       <item>finger</item>
