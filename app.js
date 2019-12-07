@@ -1,10 +1,10 @@
 var http = require('http'), //This module provides the HTTP server functionalities
-    path = require('path'), //The path module provides utilities for working with file and directory paths
-    express = require('express'), //This module allows this app to respond to HTTP Requests, defines the routing and renders back the required content
-    fs = require('fs'), //This module allows to work witht the file system: read and write files back
-    xmlParse = require('xslt-processor').xmlParse, //This module allows us to work with XML files
-    xsltProcess = require('xslt-processor').xsltProcess, //The same module allows us to utilise XSL Transformations
-    xml2js = require('xml2js'); //This module does XML to JSON conversion and also allows us to get from JSON back to XML
+path = require('path'), //The path module provides utilities for working with file and directory paths
+express = require('express'), //This module allows this app to respond to HTTP Requests, defines the routing and renders back the required content
+fs = require('fs'), //This module allows to work witht the file system: read and write files back
+xmlParse = require('xslt-processor').xmlParse, //This module allows us to work with XML files
+xsltProcess = require('xslt-processor').xsltProcess, //The same module allows us to utilise XSL Transformations
+xml2js = require('xml2js'); //This module does XML to JSON conversion and also allows us to get from JSON back to XML
 
 var router = express(); //The set our routing to be handled by Express
 var server = http.createServer(router); //This is where our server gets created
@@ -40,8 +40,8 @@ router.get('/get/html', function(req, res) {
 
     res.writeHead(200, {'Content-Type': 'text/html'}); //We are responding to the client that the content served back is HTML and the it exists (code 200)
 
-    var xml = fs.readFileSync('PaddysCafe.xml', 'utf8'); //We are reading in the XML file
-    var xsl = fs.readFileSync('PaddysCafe.xsl', 'utf8'); //We are reading in the XSL file
+    var xml = fs.readFileSync('BeautyNow.xml', 'utf8'); //We are reading in the XML file
+    var xsl = fs.readFileSync('BeautyNow.xsl', 'utf8'); //We are reading in the XSL file
     var doc = xmlParse(xml); //Parsing our XML file
     var stylesheet = xmlParse(xsl); //Parsing our XSL file
 
@@ -61,7 +61,7 @@ router.post('/post/json', function(req, res) {
     xmlFileToJs('BeautyNow.xml', function(err, result) {
       if (err) throw (err);
       //This is where you pass on information from the form inside index.html in a form of JSON and navigate through our JSON (XML) file to create a new entree object
-      result.cafemenu.section[obj.sec_n].entree.push({'item': obj.item, 'price': obj.price}); //If your XML elements are differet, this is where you have to change to your own element names
+      result.BeautyNow.section[obj.sec_n].entree.push({'item': obj.item, 'price': obj.price}); //If your XML elements are differet, this is where you have to change to your own element names
       //Converting back to our original XML file from JSON
       jsToXmlFile('BeautyNow.xml', result, function(err) {
         if (err) console.log(err);
@@ -86,7 +86,7 @@ router.post('/post/delete', function(req, res) {
     xmlFileToJs('BeautyNow.xml', function(err, result) {
       if (err) throw (err);
       //This is where we delete the object based on the position of the section and position of the entree, as being passed on from index.html
-      delete result.cafemenu.section[obj.section].entree[obj.entree];
+      delete result.BeautyNow.section[obj.section].entree[obj.entree];
       //This is where we convert from JSON and write back our XML file
       jsToXmlFile('BeautyNow.xml', result, function(err) {
         if (err) console.log(err);

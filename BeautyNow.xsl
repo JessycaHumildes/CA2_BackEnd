@@ -5,7 +5,7 @@
                 <table id="BeautyNow" class="indent">
                     <thead>
                         <tr>
-                            <th colspan="3">Morcatti Beauty Now</th>
+                            <th colspan="3">Beauty Now</th>
                         </tr>
                         <tr>
                             <th>Select</th>
