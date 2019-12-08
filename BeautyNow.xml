@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<BeautyNow>
+<BeautyNowMenu>
   <section name="Waxing">
     <entree>
       <item>Upper Lip</item>
@@ -88,4 +88,4 @@
       <price>50.00</price>
     </entree>
   </section>
-</BeautyNow>
+</BeautyNowMenu>

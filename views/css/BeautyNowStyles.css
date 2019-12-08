@@ -5,6 +5,7 @@
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+ 
 }
 .footer {
   position: absolute;
@@ -14,6 +15,7 @@ body {
   height: 60px;
   line-height: 60px; /* Vertically center the text there */
   background-color: pink;
+  color: pink;
 }
 table, th, td {
      border-collapse: collapse;
@@ -34,6 +36,10 @@ table, th, td {
      font-weight: bold;
 }
 
-.nav.navbar {
+.fixed-top {
     color: pink;
+}
+.selected {
+            background-color: #dc3545;
+            color: #FFF;
 }

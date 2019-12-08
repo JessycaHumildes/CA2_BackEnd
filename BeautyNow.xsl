@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:template match="/">
         
-                <table id="BeautyNow" class="indent">
+                <table id="BeautyNowMenu" class="indent">
                     <thead>
                         <tr>
                             <th colspan="3">Beauty Now</th>
@@ -14,14 +14,14 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <xsl:for-each select="/BeautyNow/section">
+                        <xsl:for-each select="/BeautyNowMenu/section">
                             <tr>
                                 <td colspan="3">
                                     <xsl:value-of select="@name" />
                                 </td>
                             </tr>
                             <xsl:for-each select="entree">
-                                <tr>
+                                <tr id="{position()}">
                                     <xsl:attribute name="Pigmentaion">
                                         <xsl:value-of select="boolean(./@Pigmentaion)" />
                                     </xsl:attribute>
