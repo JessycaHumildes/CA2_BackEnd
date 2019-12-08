@@ -5,6 +5,7 @@
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  background-color: pink;
  
 }
 .footer {
@@ -21,6 +22,7 @@ table, th, td {
      border-collapse: collapse;
      border: 1px solid black;
      text-align: center;
+     border-block-end-color: black;
 }
  table {
      border-collapse: collapse;
@@ -40,6 +42,22 @@ table, th, td {
     color: pink;
 }
 .selected {
-            background-color: #dc3545;
+            background-color: pink;
             color: #FFF;
 }
+
+div.container{
+    color: palevioletred;
+}
+a.navbar-brand{
+    color: black;
+   
+}
+
+.card-body{
+    color: black;
+
+}
+
+   
+
