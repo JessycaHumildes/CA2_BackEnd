@@ -8,6 +8,9 @@ body {
   background-color: pink;
  
 }
+.navbar-light {
+        background-color: #ffffff;
+}
 .footer {
   position: absolute;
   bottom: 0;
